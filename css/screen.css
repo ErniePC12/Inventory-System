@@ -1,0 +1,281 @@
+/* @import url(tables.css); */
+
+.border{
+/* 	border:thin solid red; */
+}
+
+
+
+body{
+    /* Setting the default text color, size, page background and a font stack: */
+    font-size:0.825em;
+    color:#fcfcfc;
+    background-color:#5c7fa1;
+/*     background-color:#355664; */
+    font-family:Arial, Helvetica, sans-serif;   
+}
+/***************************************************************/
+/* Hyperlink Styles: */
+/***************************************************************/
+a, a:visited {
+    color:#0196e3;
+    text-decoration:none;
+    outline:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+a img{
+    border:none;
+}
+/***************************************************************/
+
+/***************************************************************/
+/* Headings: */
+/***************************************************************/
+
+h1,h2,h3{
+    font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+    text-shadow:0 1px 1px black;
+}
+
+h1{
+    /* The logo text */
+    font-size:3.5em;
+    padding:0.5em 0 0;
+    text-transform:uppercase;
+}
+
+h3{
+    /* The slogan text */
+    font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+    font-size:2em;
+    font-weight:normal;
+    margin:0 0 1em;
+}
+
+
+h2{
+    font-size:2.2em;
+    font-weight:normal;
+    letter-spacing:0.01em;
+    text-transform:uppercase;
+}
+/***************************************************************/
+
+p{
+    line-height:1.5em;
+    padding-bottom:1em;
+}
+
+.line{
+    /* The dividing line: */
+    height:1px;
+    background-color:#24404c;
+    border-bottom:1px solid #416371;
+    margin:1em 0;
+    overflow:hidden;
+}
+
+div.article{
+	padding: 1em 0 1em 0; 
+/* 	border: thin solid red; */
+}
+div.article .line{
+    /* The dividing line inside of the article is darker: */
+    background-color:#15242a;
+    border-bottom-color:#204656;
+    margin:1.3em 0;
+}
+
+footer .line{
+    margin:2em 0;
+}
+
+nav{
+    background:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAUAAA/+4AJkFkb2JlAGTAAAAAAQMAFQQDBgoNAAABsgAAAdMAAAIVAAACQP/bAIQAAgICAgICAgICAgMCAgIDBAMCAgMEBQQEBAQEBQYFBQUFBQUGBgcHCAcHBgkJCgoJCQwMDAwMDAwMDAwMDAwMDAEDAwMFBAUJBgYJDQsJCw0PDg4ODg8PDAwMDAwPDwwMDAwMDA8MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8IAEQgAlgAKAwERAAIRAQMRAf/EAH0AAQEBAQAAAAAAAAAAAAAAAAADAQgBAQAAAAAAAAAAAAAAAAAAAAAQAQEAAwEAAAAAAAAAAAAAABEAEDBQQBEBAAAAAAAAAAAAAAAAAAAAUBIBAAAAAAAAAAAAAAAAAAAAUBMAAgIDAQAAAAAAAAAAAAAAABEwUCBAAXH/2gAMAwEAAhEDEQAAAetAAAAAUMLAuC4LgqCgNAAAAAAB/9oACAEBAAEFAthERERGDw//2gAIAQIAAQUC43//2gAIAQMAAQUC43//2gAIAQICBj8CG//aAAgBAwIGPwIb/9oACAEBAQY/Ahv/2gAIAQEDAT8hiQoQBaT/2gAIAQIDAT8hpv/aAAgBAwMBPyGm/9oADAMBAAIRAxEAABAAAACAQQAACSQAAAAAAD//2gAIAQEDAT8QgQsoMeMhLguT/wD/2gAIAQIDAT8Qpv/aAAgBAwMBPxCm/9k=) repeat-x 50% 50% #f8f8f8;
+    
+/*     background:url(img/gradient_light.jpg) repeat-x 50% 50% #f8f8f8; */
+    padding:0 5px;
+    position:absolute;
+    right:4em;
+    top:4em;
+    
+    border:1px solid #FCFCFC;
+
+    -moz-box-shadow:0 1px 1px #333333;
+    -webkit-box-shadow:0 1px 1px #333333;
+    box-shadow:0 1px 1px #333333;
+}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/***************************************************************/
+/* The navigation styling: */
+/***************************************************************/
+nav ul li{
+    display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+    color:#565656;
+    display:block;
+    float:left;
+    font-size:1.25em;
+    font-weight:bold;
+    margin:5px 2px;
+    padding:7px 10px 4px;
+    text-shadow:0 1px 1px white;
+    text-transform:uppercase;
+}
+
+nav ul li a:hover{
+    text-decoration:none;
+    background-color:#f0f0f0;
+}
+
+nav, div.article, nav ul li a,div.figure{
+    /* Applying CSS3 rounded corners: */
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+/***************************************************************/
+
+/***************************************************************/
+/* Article styles: */
+/***************************************************************/
+#page{
+    width:960px;
+    margin:0 auto;
+    position:relative;
+}
+
+div.article{
+/*     background-color:#213E4A; */
+    margin:1em 3em;
+    padding:20px;
+    
+/*     text-shadow:0 2px 0 black; */
+}
+
+div.figure{
+    border:3px solid #142830;
+    float:right;
+    height:300px;
+    margin-left:15px;
+    overflow:hidden;
+    width:500px;
+}
+
+div.figure:hover{
+    -moz-box-shadow:0 0 2px #4D7788;
+    -webkit-box-shadow:0 0 2px #4D7788;
+    box-shadow:0 0 2px #4D7788;
+}
+
+div.figure img{
+    margin-left:-60px;
+}
+
+/* Footer styling: */
+
+footer{
+    margin-bottom:30px;
+    text-align:center;
+    font-size:0.825em;
+    position: absolute;
+    bottom:1px;
+    right:10mm;
+}
+
+
+footer p{
+    margin-bottom:-2.5em;
+    position:relative;
+}
+
+footer a,footer a:visited{
+    color:#cccccc;
+    background-color:#213e4a;
+    display:block;
+    padding:2px 4px;
+    z-index:100;
+    position:relative;
+}
+
+footer a:hover{
+    text-decoration:none;
+    background-color:#142830;
+}
+
+footer a.by{
+    float:left;
+
+}
+
+footer a.up{
+    float:right;
+}
+
+
+
+/*****************************************************************************/
+#gradient-style {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size:12px;
+/* 	width:480px; */
+	width: 90%;
+	text-align:left;
+/* 	border-collapse:collapse; */
+	margin:20px;
+}
+
+#gradient-style th {
+	font-size:13px;
+	font-weight:normal;
+	background:#b9c9fe url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAhCAIAAACX21boAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAChJREFUeNpimL/1HxMLMwMTMxMEMyFjRigGshkZoZgBQjMwUA0DBBgAUdoCwVlCRF8AAAAASUVORK5CYII=) repeat-x;
+/* 	background:#b9c9fe url(http://media.smashingmagazine.com/cdn_smash/images/express-css-table-design/table-images/gradhead.png) repeat-x; */
+	border-top:2px solid #d3ddff;
+	border-bottom:1px solid #fff;
+	color:#039;
+	padding:8px;
+}
+
+#gradient-style td {
+	border-bottom:1px solid #fff;
+	color:#669;
+	border-top:1px solid #fff;
+	background:#e8edff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAgCAIAAABch4VNAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEhJREFUeNp8w8kNgCAARcHXf4EaV0DZ3Gr4QvTgyUmGxojWis6JfhHDKkYvpiDm0kRhk3DlkstNrG) repeat-x;
+/* 	background:#e8edff url(http://media.smashingmagazine.com/cdn_smash/images/express-css-table-design/table-images/gradback.png) repeat-x; */
+	padding:8px;
+}
+
+#gradient-style tfoot tr td{
+	background:#e8edff;
+	font-size:12px;
+	color:#99c;
+}
+
+#gradient-style tfoot th{
+	background:#e8edff;
+	font-size:12px;
+	color:#99c;
+	text-align: right;
+}
+
+#gradient-style tbody tr:hover td {
+	background:#d0dafd url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAgCAIAAABch4VNAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNqkxckNgDAQBMH25p8SLwsEmMMGxBWLR2Jz4FEqmlQtBMycT8yVtohuE) repeat-x;
+/* 	background:#d0dafd url(http://media.smashingmagazine.com/cdn_smash/images/express-css-table-design/table-images/gradhover.png) repeat-x; */
+	color:#339;
+}
