@@ -1,4 +1,19 @@
-<?php include_once "common/database.php" ?>
+<?php 
+	if ($_GET['f']=="f"){
+		session_start();
+		session_destroy();
+		header("location:login.php");
+	}
+	
+	session_start();
+	if(!session_is_registered('myusername')){
+		header("location:login.php");
+	}
+
+	include_once "common/database.php" 
+
+
+?>
 <!doctype html>
 <!-- simplified doctype works for all previous versions of HTML as well -->
 
@@ -35,6 +50,10 @@
 				<li><a href="javascript:ajaxpage('common/item.php','article');">Item</a></li>
 				<li><a href="javascript:ajaxpage('common/purchase.php','article');">Purchase</a></li>
 				<li><a href="javascript:ajaxpage('common/disposal.php','article');">Disposal</a></li>
+				<li><a href=""></a></li>
+				<li><a href="">Search</a></li>
+				<li><a href=""></a></li>
+				<li><a href="index.php?f=f">Logout</a></li>
 			</ul>
 		</nav>
 
