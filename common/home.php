@@ -18,7 +18,7 @@
 		case "desc": $sort .= " ".strtoupper($_GET['order']); break;
 	}
 
-	print $sql_home = "SELECT SQL_CACHE type, item_serial, location, last_update FROM inventory_view $sort";
+	print $sql_home = "SELECT SQL_CACHE id, type, item_serial, location, last_update FROM inventory_view $sort";
 	$result=mySQLQuery($sql_home);
 	$count=mysql_num_rows($result);
 
@@ -37,7 +37,7 @@
 -->
 		<table border="1" id="gradient-style">
 			<caption><?php print $p=$_GET['p']; ?></caption>
-			<colgroup />
+			<colgroup></colgroup>
 			<colgroup span="2" title="title" />
 			<thead>
 				<tr>
@@ -54,7 +54,7 @@
 			</tfoot>
 			<?php while($row=mysql_fetch_array($result)){ ?>
 			<tbody>
-				<tr>
+				<tr onclick="javascript:ajaxpage('common/item.php?id=<?php print $row['id']; ?>','article');"">
 					<td><?php print $row['type'];?></td>
 					<td><?php print $row['item_serial'];?></td>
 					<td><?php print $row['location'];?></td>
