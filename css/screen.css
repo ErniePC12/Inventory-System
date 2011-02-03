@@ -24,7 +24,13 @@ body{
 	position: absolute;
 	bottom: 0;
 	left:0;
+}
 
+.arrow
+{
+	width: 42px; height: 42px;
+	display: inline;
+    background: transparent url(../img/arrows.png) no-repeat 0px 0px;
 }
 /***************************************************************/
 /* Hyperlink Styles: */
