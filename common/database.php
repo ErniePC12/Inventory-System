@@ -54,6 +54,22 @@ function manuf_menu()
 	return $opt;
 }
 /*###################################################################################*/
+function location_menu()
+{
+	$sql_result =  mySQLQuery("SELECT SQL_CACHE * FROM inv_loc_view");
+	while($type_row = mysql_fetch_assoc($sql_result) )
+	{ $opt .= "<option value=\"".$type_row['id']."\">".$type_row['location']."&nbsp;&nbsp;&nbsp;&nbsp;</option>"; }
+	return $opt;
+}
+/*###################################################################################*/
+/*###################################################################################*/
+function system_status()
+{
+	$link = mysql_connect("localhost", "inventory", "inventory");
+	printf("System status: %s\n", mysql_stat($link));
+	mysql_close($link);
+	return;
+}
 /*###################################################################################*/
 /*###################################################################################*/
 /*###################################################################################*/
