@@ -10,7 +10,7 @@ function mySQLQuery($theQuery) {
 		$databaseName = 'sdny_inventory';
 		$databasePort = '3306';
 /* 		$databaseSock = "/tmp/mysql.sock"; */
-		print $theQuery;
+/* 		print $theQuery; */
 		
  		$databaseConnection = mysql_connect($databaseHost, $databaseUser, $databasePassword); 
  			
@@ -38,8 +38,21 @@ function mySQLQuery($theQuery) {
 
 /* FUNCTIONS */
 /*###################################################################################*/
-
+function type_menu()
+{
+	$sql_result =  mySQLQuery("SELECT SQL_CACHE * FROM inv_type_view");
+	while($type_row = mysql_fetch_assoc($sql_result) )
+	{ $opt .= "<option value=\"".$type_row['id']."\">".$type_row['type']."&nbsp;&nbsp;&nbsp;&nbsp;</option>"; }
+	return $opt;
+}
 /*###################################################################################*/
+function manuf_menu()
+{
+	$sql_result =  mySQLQuery("SELECT SQL_CACHE * FROM inv_manuf_view");
+	while($type_row = mysql_fetch_assoc($sql_result) )
+	{ $opt .= "<option value=\"".$type_row['id']."\">".$type_row['manufacture']."&nbsp;&nbsp;&nbsp;&nbsp;</option>"; }
+	return $opt;
+}
 /*###################################################################################*/
 /*###################################################################################*/
 /*###################################################################################*/
