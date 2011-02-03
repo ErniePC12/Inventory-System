@@ -1,17 +1,65 @@
+<?php include_once "database.php"; ?>
 		<h2>Item</h2>
 			
 			<div class="line"></div>
 			
-			<div class="articleBody clear">
+		<div class="articleBody clear">
 			
-			<!-- The figure tag marks data (usually an image) that is part of the article -->
-<!--
-				<div class="figure">
-					<a href="http://tutorialzine.com/2010/02/photo-shoot-css-jquery/"><img src="http://tutorialzine.com/img/featured/641.jpg" width="620" height="340" alt="Image one"></a>
-				</div>
--->
-                
-                <p>Item Form goes here</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. Duis felis dui, vulputate nec adipiscing nec, interdum vel tortor. Sed gravida, erat nec rutrum tincidunt, metus mauris imperdiet nunc, et elementum tortor nunc at eros. Donec malesuada congue molestie. Suspendisse potenti. Vestibulum cursus congue sem et feugiat. Morbi quis elit odio. </p>
-
-			</div>
+			<table border="1" id="gradient-style" style="width:400px;">
+				<caption></caption>
+				<colgroup />
+				<colgroup span="2" title="title" /> </colgroup>
+				<thead>
+<!-- 					<tr> -->
+<!-- 						<th scope="col" onclick="" colspan="4" ></th> -->
+<!-- 						<th scope="col" onclick="" ><a href="javascript:ajaxpage('common/home.php?sort=type&amp;order=asc','article');">Item Type</a></th> -->
+<!-- 						<th scope="col" onclick="" ><a href="javascript:ajaxpage('common/home.php?sort=serial&amp;order=asc','article');">Item Serial</a></th> -->
+<!-- 						<th scope="col" onclick="" ><a href="javascript:ajaxpage('common/home.php?sort=location&amp;order=asc','article');">Location</a></th> -->
+<!-- 						<th scope="col" onclick="" ><a href="javascript:ajaxpage('common/home.php?sort=last_update&amp;order=asc','article');">Last Update</a></th> -->
+<!-- 					</tr> -->
+				</thead>
+				<tfoot>
+					<tr>
+						<th scope="col" colspan="4">1</th>
+					</tr>
+				</tfoot>
+				
+				<tbody>
+					<tr>
+						<th scope="col" width="30">Type</th>
+						<td colspan="3">
+							<select size="1" name="type">
+								<option selected="selected"></option>
+								<?php print type_menu(); ?>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="col">Serial #:</th>
+						<td colspan="3"><input type="text" size="40" maxlength="60"</td>
+					</tr>
+					<tr>
+						<th scope="col">Manufracture:</th>
+						<td colspan="3">
+							<select size="1" name="type">
+								<option selected="selected"></option>
+								<?php print manuf_menu(); ?>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="col">Location</th>
+						<td>1</td>
+						<th scope="col">Room</th>
+						<td>3</td>
+					</tr>
+					<tr>
+						<th scope="col">Notes</th>
+						<td colspan="3">
+							<textarea name="notes" cols="40" rows="5"></textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		
+		<div class="line"></div>
