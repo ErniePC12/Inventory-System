@@ -16,9 +16,8 @@ if ($_POST['input']=="input")
 /* 		$myusername = mysql_real_escape_string($myusername); */
 /* 		$mypassword = mysql_real_escape_string($mypassword); */
 		
-		print $sql="SELECT * FROM inventory_users WHERE username=\"$myusername\" AND passwd=\"$mypassword\" ";
+		$sql="SELECT * FROM inventory_users WHERE username=\"$myusername\" AND passwd=\"$mypassword\" ";
 		$result=mySQLQuery($sql);
-		print $result;
 		if (!is_string($result)){
 		
 			// Mysql_num_row is counting table row
@@ -50,7 +49,7 @@ if ($_POST['input']=="input")
 <html>
 	<head>
 	<?php include_once "common/head.php" ?>
-	<link rel="stylesheet" href="css/tables.css?v=1.0">
+<!-- 	<link rel="stylesheet" href="css/tables.css?v=1.0"> -->
 	</head>
 
 <!--
