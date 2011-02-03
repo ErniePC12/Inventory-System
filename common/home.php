@@ -18,7 +18,8 @@
 		case "desc": $sort .= " ".strtoupper($_GET['order']); break;
 	}
 
-	print $sql_home = "SELECT SQL_CACHE id, type, item_serial, location, last_update FROM inventory_view $sort";
+	$sql_home = "SELECT SQL_CACHE id, type, item_serial, location, last_update FROM inventory_view $sort";
+	print "<span class=\"error\">".$sql_home."</span>";
 	$result=mySQLQuery($sql_home);
 	$count=mysql_num_rows($result);
 

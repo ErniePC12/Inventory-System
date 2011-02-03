@@ -6,7 +6,8 @@
 	{
 		$update='T';
 		
-		print $item_sql = "SELECT * FROM inventory_view WHERE id=".$_GET['id'];
+		$item_sql = "SELECT * FROM inventory_view WHERE id=".$_GET['id'];
+		print "<span class=\"error\">".$item_sql."</span>";
 		$result=mysql_fetch_assoc(mySQLQuery($item_sql));
 	}
 
