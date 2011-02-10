@@ -3,6 +3,7 @@
 		session_start();
 		session_destroy();
 		header("location:login.php");
+		setcookie("username", "", time()-1800);
 	}
 	
 	session_start();
