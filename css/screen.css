@@ -1,10 +1,9 @@
+@import url(navigation.css);
 /* @import url(tables.css); */
 
 .border{
 /* 	border:thin solid red; */
 }
-
-
 
 body{
     /* Setting the default text color, size, page background and a font stack: */
@@ -22,7 +21,7 @@ body{
 	padding:2mm 4mm;
 	
 	position: absolute;
-	bottom: 0;
+	bottom: 7mm;
 	left:0;
 }
 
