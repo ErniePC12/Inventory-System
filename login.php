@@ -16,7 +16,7 @@ if ($_POST['input']=="input")
 /* 		$myusername = mysql_real_escape_string($myusername); */
 /* 		$mypassword = mysql_real_escape_string($mypassword); */
 		
-		$sql="SELECT * FROM inventory_users WHERE username=\"$myusername\" AND passwd=\"$mypassword\" ";
+		$sql="SELECT * FROM inventory_users_view WHERE username=\"$myusername\" AND passwd=\"$mypassword\" ";
 		$result=mySQLQuery($sql);
 		if (!is_string($result)){
 		
@@ -28,6 +28,8 @@ if ($_POST['input']=="input")
 			// Register $myusername, $mypassword and redirect to file "login_success.php"
 				session_register("myusername");
 				session_register("mypassword"); 
+				setcookie("username", $myusername, time()+3600);
+
 				header("location:index.php");
 			}else{$error="Wrong Username or Password";}
 			
