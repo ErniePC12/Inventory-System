@@ -9,6 +9,8 @@
 <!-- 	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.4.4.min.js"%3E%3C/script%3E'))</script> -->
 	
 <!-- 	<script src="http://code.jquery.com/jquery-1.5.min.js"></script> -->
+	<script src="js/jquery-1.5.min.js"></script>
+<!-- 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> -->
 <!-- 	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.5.min.js"%3E%3C/script%3E'))</script> -->
 
 <!-- Below is your script file, which has a basic JavaScript design pattern that you can optionally use -->
