@@ -1,5 +1,6 @@
 <!-- The main footer has an ID for targeting, similar to the main header -->
 	<footer id="f1">
+		<p>Signed in as: <?php print $menu['full_user_name']; ?></p><br /><br />
 		<p>Built by the SDNY Computer Systems &copy; <?php print date('Y'); ?></p>
 	</footer><!-- #f1 -->
 
