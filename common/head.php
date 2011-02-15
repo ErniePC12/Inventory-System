@@ -2,8 +2,8 @@
 	<meta charset="utf-8">
 	
 	<title>US District Court Inventory System</title>
-	<meta name="description" content="Easy HTML5 Template">
-	<meta name="author" content="">
+	<meta name="description" content="Hardware Inventory System">
+	<meta name="author" content="Matt F.">
 	
 	<!-- Delete these two icon references once you've placed them in the root directory with these file names -->
 	<!-- favicon 16x16 -->
