@@ -260,7 +260,7 @@ footer a.up{
 	font-family:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 	font-size:12px;
 /* 	width:480px; */
-	width: 90%;
+	width: 96%;
 	text-align:left;
 /* 	border-collapse:collapse; */
 	margin:20px;
@@ -274,7 +274,7 @@ footer a.up{
 	border-top:2px solid #d3ddff;
 	border-bottom:1px solid #fff;
 	color:#039;
-	padding:8px;
+	padding:6px;
 }
 
 #gradient-style td {
